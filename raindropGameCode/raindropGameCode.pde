@@ -19,6 +19,7 @@ void draw() {
   mouse.set(mouseX, mouseY);             //set value of mouse as mouseX,mouseY
   colorMode(RGB, 255, 255, 255);
   background(0, 200, 255);
+  
   for (int i = 0; i < count; i++){ 
     r[i].fall();         //make the raindrop fall. It should accelerate as if pulled towards the ground by earth's gravity
     r[i].display();      //display the raindrop
@@ -29,4 +30,5 @@ void draw() {
       r[i].reset();                           //if it does, reset the raindrop
     }
   }
+  
 }
