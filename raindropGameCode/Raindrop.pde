@@ -17,11 +17,8 @@ class Raindrop {
   }
   
   void fall(){
-    loc.x += vel.x;
-    loc.y += vel.y;
-    
-    vel.x += acc.x;
-    vel.y += acc.y;
+    loc.add(vel);
+    vel.add(acc);
   }
 
   boolean isInContactWith(PVector mouse){
@@ -35,6 +32,7 @@ class Raindrop {
   
   void reset(){
     loc.y = 0;
+    loc.x = random(0,width);
     vel.y = -0.1;
   }
   
