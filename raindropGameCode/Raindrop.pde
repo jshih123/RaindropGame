@@ -5,7 +5,7 @@ class Raindrop {
   Raindrop(PVector pos){
     diam = 50;
     loc = pos;
-    vel = new PVector(0, -.1);
+    vel = new PVector(0, -.15);
     acc = new PVector(0, .05);
   }
   
@@ -35,6 +35,7 @@ class Raindrop {
   
   void reset(){
     loc.y = 0;
+    vel.y = -0.1;
   }
   
 }
