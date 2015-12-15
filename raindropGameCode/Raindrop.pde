@@ -5,8 +5,8 @@ class Raindrop {
   Raindrop(PVector pos){
     diam = 50;
     loc = pos;
-    vel = new PVector(0, -.15);
-    acc = new PVector(0, .05);
+    vel = new PVector(0, -.2);
+    acc = new PVector(0, .1);
   }
   
   void display(){
@@ -22,7 +22,7 @@ class Raindrop {
   }
 
   boolean isInContactWith(PVector mouse, float buckDiam){
-    if (loc.dist(mouse) < diam/2 + buckDiam){
+    if (loc.dist(mouse) < diam/2 + buckDiam/2){
       return true;
     }
     else{

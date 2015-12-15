@@ -19,8 +19,8 @@ void draw() {
   bucket.display();
     
   for (int i = 0; i < count; i++){ 
-    r[i].fall();         //make the raindrop fall. It should accelerate as if pulled towards the ground by earth's gravity
-    r[i].display();      //display the raindrop
+   r[i].fall();         //make the raindrop fall. It should accelerate as if pulled towards the ground by earth's gravity
+   r[i].display();      //display the raindrop
    if (r[i].isInContactWith(mouse, bucket.diam)) {      //check to see if the raindrop is in contact with the point represented by the PVector called mouse
       r[i].reset();                         //if it is, reset the raindrop
     }
@@ -29,6 +29,4 @@ void draw() {
     }
   }
   
-
-
 }
