@@ -21,8 +21,8 @@ class Raindrop {
     vel.add(acc);
   }
 
-  boolean isInContactWith(PVector mouse){
-    if (loc.dist(mouse) < diam/2){
+  boolean isInContactWith(PVector mouse, float buckDiam){
+    if (loc.dist(mouse) < diam/2 + buckDiam){
       return true;
     }
     else{
