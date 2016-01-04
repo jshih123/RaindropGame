@@ -3,7 +3,7 @@ class Raindrop {
   int diam;
   
   Raindrop(PVector pos){
-    diam = 50;
+    diam = 25;
     loc = pos;
     vel = new PVector(0, -.2);
     acc = new PVector(0, .1);
