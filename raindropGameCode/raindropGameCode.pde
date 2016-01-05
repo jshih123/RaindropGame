@@ -31,6 +31,7 @@ void draw() {
  if (gameMode == 2) { //lives for lives
     fill (200, 200, 200); //reset background
     background(0, 200, 255);
+    fill(255);
     text("Set lives between 1 and 10", width/2, height/2-50); //lives 1 to 9
     text(lives, width/2, height/2);
     text("Press Space to continue", width/2, height/2 + 50); //space to start
@@ -111,6 +112,12 @@ void draw() {
     text ("Oh no! You ran out of lives!", width/2, height/2-50);
     text ("Press space to play again", width/2, height/2+50); //reset game
     lives = 10; //reset lives
+    score = 0;
+    time = 0;
+    
+    for(int i = 0; i < raindrops.size(); i++){
+      raindrops.clear();
+    }
   }
 }
 
